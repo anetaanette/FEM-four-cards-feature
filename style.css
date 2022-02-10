@@ -14,11 +14,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 body {
   height: 100vh;
-  width: 80%;
+  width: 100%;
   color: var(--very-dark-blue);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,10 +34,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: var(--very-light-gray);
 }
 
 body > main {
   height: 100vh;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,6 +59,12 @@ body > main > .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body > footer > .attribution {
@@ -69,7 +78,18 @@ body > footer > .attribution a {
 }
 
 .box {
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 300px;
+  padding: 2rem;
+  position: relative;
+  background: white;
+}
+
+.box > img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 /*# sourceMappingURL=style.css.map */
