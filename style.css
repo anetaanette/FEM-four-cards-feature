@@ -53,6 +53,25 @@ body > main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 2rem;
+}
+
+body > main > .font-one {
+  font-size: 2rem;
+  margin-bottom: -2rem;
+  font-weight: 200;
+}
+
+body > main > h1 {
+  font-size: 2rem;
+}
+
+body > main > .font-two {
+  max-width: 450px;
+  color: var(--grayish-blue);
+  font-size: 0.9rem;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 body > main > .flex {
@@ -65,6 +84,34 @@ body > main > .flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 2rem;
+}
+
+body > main > .flex > .box__left {
+  border-top: 4px solid var(--cyan);
+}
+
+body > main > .flex > .flex__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+body > main > .flex > .flex__column > .box__upper {
+  border-top: 4px solid var(--red);
+}
+
+body > main > .flex > .flex__column > .box__bottom {
+  border-top: 4px solid var(--orange);
+}
+
+body > main > .flex > .box__right {
+  border-top: 4px solid var(--blue);
 }
 
 body > footer > .attribution {
@@ -83,6 +130,15 @@ body > footer > .attribution a {
   padding: 2rem;
   position: relative;
   background: white;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 5px 15px 0px #a3a5ae;
+          box-shadow: 0px 5px 15px 0px #a3a5ae;
+}
+
+.box > p {
+  color: var(--grayish-blue);
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
 }
 
 .box > img {
@@ -91,5 +147,41 @@ body > footer > .attribution a {
   position: absolute;
   right: 0px;
   bottom: 0px;
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  body > main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 95%;
+    padding-top: 2rem;
+  }
+  body > main > .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
