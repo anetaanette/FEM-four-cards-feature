@@ -169,12 +169,21 @@ body > footer > .attribution a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 140%;
     width: 100%;
     padding-top: 2rem;
   }
-  body > main > p {
-    width: 95%;
+  body > main > .font-one {
+    font-size: 1.8rem;
+  }
+  body > main > h1 {
+    font-size: 1.8rem;
   }
   body > main > .flex {
     display: -webkit-box;
